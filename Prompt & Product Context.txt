@@ -1,0 +1,3347 @@
+﻿PRODUCT CONTEXT — NEURAL PREDICTOS
+
+
+Neural PredictOS is an AI-powered Material Demand & Procurement Intelligence platform designed for apparel manufacturing / RMG factories.
+
+
+It is NOT an ERP replacement. It is an AI planning and intelligence layer that sits on top of existing ERP, Excel, CSV, and manufacturing systems.
+
+
+Existing systems already contain:
+
+
+- Production orders
+
+
+- BOMs
+
+
+- Inventory
+
+
+- Purchase orders
+
+
+- Suppliers
+
+
+- Material requirements
+
+
+- Historical consumption
+
+
+- Production plans
+
+
+Neural PredictOS uses this operational data to answer future-oriented planning questions:
+
+
+1. What materials will we need over the next 1–6 months?
+
+
+2. How much of each material will we need?
+
+
+3. When will we need them?
+
+
+4. What should we prioritize for procurement?
+
+
+PRIMARY USERS:
+
+
+1. Production Planner
+
+
+2. Procurement Planner / Procurement Manager
+
+
+CORE PRODUCT FLOW:
+
+
+Data → AI Forecast → Future Shortage Detection → Risk & Priority → Procurement Recommendation → Human Decision → Production / Procurement Action
+
+
+The product has 7 initial modules:
+
+
+1. Data Integration — supporting module
+
+
+   Import/connect ERP, Excel, CSV and manufacturing data.
+
+
+2. AI Data & Master Management — supporting module
+
+
+   Clean, standardize and organize materials, styles, BOM, suppliers, inventory and order data.
+
+
+3. Neural SmartDemand Analytics — CORE FEATURE 1
+
+
+   AI-powered forecasting of raw material and accessory demand for the next 1–6 months.
+
+
+4. Neural Procurement Intelligence — CORE FEATURE 2
+
+
+   Identifies future shortages, evaluates risk, prioritizes materials and recommends procurement quantity and timing.
+
+
+5. What-If Analysis — supporting core feature
+
+
+   Allows planners to test scenarios such as production increases, order changes and supplier delays.
+
+
+6. Forecast Export — supporting module
+
+
+   Export forecasts and insights for reporting and planning.
+
+
+7. Manual Override & Feedback — supporting module
+
+
+   Allows planners to adjust AI forecasts and provide feedback to improve future accuracy.
+
+
+Both core features support two interaction modes:
+
+
+MANUAL MODE:
+
+
+The user selects filters, planning horizon, materials, styles, buyers, production forecasts, etc.
+
+
+AGENTIC MODE:
+
+
+The user enters a natural-language prompt and an AI agent automatically selects relevant data, performs analysis, forecasting/risk analysis and filtering.
+
+
+IMPORTANT UX PRINCIPLE:
+
+
+AI assists the planner; it does not replace the planner.
+
+
+Every important AI-generated forecast or recommendation should remain reviewable and editable by the human user.
+
+
+The home dashboard should therefore feel like a professional enterprise AI planning platform for an apparel factory — not a consumer chatbot.
+
+
+Design language:
+
+
+- Premium enterprise SaaS
+
+
+- Clean and spacious
+
+
+- Modern AI interface
+
+
+- Professional and trustworthy
+
+
+- Light theme
+
+
+- White / very light neutral background
+
+
+- Deep navy text
+
+
+- Green as the primary AI/product accent
+
+
+- Subtle purple/blue secondary accents
+
+
+- Rounded cards
+
+
+- Soft shadows
+
+
+- Clear data hierarchy
+
+
+- Minimal visual clutter
+
+
+- Suitable for Production Planning and Procurement managers
+
+
+The UI should communicate:
+
+
+“Understand what will happen next, identify risk early, and decide what to do.”
+
+
+Prompt For Dashboard
+
+Now build the HOME DASHBOARD of Neural PredictOS.
+
+
+ IMPORTANT:
+ Do not build the internal pages of the individual modules yet. This task is ONLY for the main Home Dashboard / landing screen after login.
+
+
+ The layout should be a professional enterprise SaaS application with a persistent LEFT SIDEBAR and a MAIN CONTENT AREA.
+
+
+ ==================================================
+ 1. LEFT SIDEBAR — PRODUCT NAVIGATION
+ ==================================================
+
+
+ Create a fixed vertical sidebar on the left.
+
+
+ At the top:
+ - Neural PredictOS logo / wordmark
+ - Small subtitle: “AI Planning Intelligence”
+
+
+ Then create the primary navigation.
+
+
+ Navigation structure:
+
+
+ HOME
+ - Dashboard
+
+
+ PLANNING
+ - Neural SmartDemand Analytics
+ - What-If Analysis
+
+
+ PROCUREMENT
+ - Neural Procurement Intelligence
+-What-if Analysis
+
+
+ DATA
+ - Data Integration
+ - AI Data & Master Management
+
+
+ REPORTING
+ - Forecast Export
+ - Manual Override & Feedback
+
+
+ The active page should be “Dashboard”.
+
+
+ Use simple professional line icons for every navigation item.
+
+
+ The sidebar should feel like a modern enterprise product such as a premium supply-chain SaaS platform.
+
+
+ At the bottom of the sidebar include:
+ - User profile
+ - User role: “Production Planning Manager”
+ - Settings
+ - Help / Support
+
+
+ ==================================================
+ 2. MAIN CONTENT — TOP HEADER
+ ==================================================
+
+
+ At the top of the main content area create a clean header.
+
+
+ Left:
+ “Good Morning, Planner”
+ Small supporting text:
+ “Here’s your planning intelligence for today.”
+
+
+ Right side:
+ - Notification icon
+ - Search
+ - User avatar
+ - Current factory / workspace selector
+
+
+ Example workspace:
+ “Factory A — Dhaka”
+
+
+ ==================================================
+ 3. HERO AI ASSISTANT PANEL
+ ==================================================
+
+
+ The RIGHT / upper portion of the dashboard should contain a prominent AI Assistant card inspired by the provided visual reference.
+
+
+ The visual direction should resemble the reference image:
+
+
+ - Large rounded white card
+ - Very soft shadow
+ - Premium light background
+ - AI assistant / robot visual or abstract AI character illustration on one side
+ - Speech-bubble style text area
+ - Green and blue/purple accent colors
+ - Friendly but professional
+ - NOT cartoonish in a childish way
+ - It should feel like enterprise AI
+
+
+ Use this headline:
+
+
+ “Hello! I’m Neural PredictOS AI Assistant.”--> This text should have type writing effect
+
+
+ Highlight “Neural PredictOS” with the primary green accent.
+
+
+ Supporting text:
+
+
+ “I help you forecast material demand, identify risks, prioritize procurement and make smarter decisions for your factory.”
+
+
+ Below the text, show 4 compact capability cards:
+
+
+ 1. AI Forecasting
+ “Demand forecasts”
+
+
+ 2. Risk Intelligence
+ “Future shortage risks”
+
+
+ 3. Procurement Recommendations
+ “What to procure next”
+
+
+ 4. Data Insights & Reports
+ “Planning intelligence”
+
+
+ Each capability should have a clean icon.
+
+
+ Add a primary CTA:
+ “Ask Neural PredictOS”
+
+
+ Add a secondary CTA:
+ “View Today’s Insights”
+
+
+ The AI Assistant should look like the central intelligence layer of the entire platform.
+
+
+
+
+ The dashboard should make AI interaction obvious but not overwhelming.
+
+
+ Include a compact prompt input near the hero area:
+
+
+ “Ask Neural PredictOS anything about your material demand or procurement…”
+
+
+ Example suggested prompts underneath:
+
+
+ “Which materials are at risk next month?”
+ “Forecast fabric demand for Q4”
+ “What should procurement prioritize?”
+
+
+ When a suggested prompt is clicked, it can populate the input field.
+
+
+ For this first prototype, the interaction can be simulated on the front end.
+
+
+ ==================================================
+4. VISUAL DESIGN
+ ==================================================
+
+
+ Use the provided image as visual inspiration for the AI Assistant section, you can exactly copy it
+ Overall design should feel like:
+
+
+ Enterprise SaaS
+ +
+ AI planning platform
+ +
+ Supply-chain intelligence
+ +
+ Modern executive dashboard
+
+
+ Use:
+ - Light background
+ - White cards
+ - Deep navy typography
+ - Green primary accent
+ - Subtle blue/purple AI accents
+ - Rounded corners
+ - Soft shadows
+ - Generous spacing
+ - Professional icons
+ - Modern readable typography
+
+
+ Avoid:
+ - Excessive gradients
+ - Neon colors
+ - Gaming-style UI
+ - Childish illustrations
+ - Excessive animations
+ - Too many charts
+ - Dense ERP-style tables
+ - Generic “ChatGPT clone” appearance
+
+
+ ==================================================
+ 11. RESPONSIVE BEHAVIOR
+ ==================================================
+
+
+ Desktop is the primary target because this is an enterprise planning application.
+
+
+ On smaller screens:
+ - Collapse the sidebar
+ - Stack dashboard cards
+ - Keep the AI Assistant prominent
+ - Ensure tables become horizontally scrollable or responsive
+
+
+ ==================================================
+ 12. TECHNICAL / PROTOTYPE REQUIREMENTS
+ ==================================================
+
+
+ Build the dashboard as a functional clickable prototype.
+
+
+ Navigation items should be clickable.
+
+
+ For now:
+ - Home/Dashboard should be fully implemented.
+ - Other module navigation can lead to placeholder pages with the correct module name and a message such as:
+ “This module will be implemented in the next prototype phase.”
+
+
+ Do NOT implement the full SmartDemand or Procurement Intelligence workflows yet.
+
+
+ We will build those core features step-by-step later.
+
+
+ Use realistic apparel manufacturing demo data throughout the dashboard.
+
+
+ The final result should look polished enough to present as a Product Manager case-study prototype.
+
+
+
+
+Prompt For First Feature
+
+BUILD THE FIRST CORE FEATURE OF NEURAL PREDICTOS:
+
+
+FEATURE NAME:
+
+
+Neural SmartDemand Analytics
+
+
+IMPORTANT:
+
+
+This is an MVP demonstration prototype for an apparel manufacturing / RMG factory.
+
+
+The purpose of this feature is to demonstrate how Neural PredictOS helps a Production Planner forecast future material demand for the next 1–6 months using AI.
+
+
+The experience must feel realistic enough for a Product Manager case-study demonstration.
+
+
+--------------------------------------------------
+
+
+1. CORE PRODUCT LOGIC
+
+
+--------------------------------------------------
+
+
+Neural SmartDemand Analytics has TWO MODES:
+
+
+MODE 1 — MANUAL
+
+
+The Production Planner manually selects:
+
+
+- Planning horizon (1–6 months)
+
+
+- Material category
+
+
+- Material
+
+
+- Style
+
+
+- Buyer
+
+
+MODE 2 — AGENTIC
+
+
+The Production Planner enters a natural-language request.
+
+
+For the MVP demo, use a PRE-BUILT prompt that is already typed into the Agentic prompt box.
+
+
+IMPORTANT:
+
+
+Regardless of which mode the user chooses, both modes MUST eventually lead to the SAME FORECAST RESULT DASHBOARD.
+
+
+The difference is only how the system gathers/selects the forecasting inputs.
+
+
+Manual:
+
+
+User chooses the inputs.
+
+
+Agentic:
+
+
+AI interprets the request and automatically selects the relevant inputs.
+
+
+After analysis, both paths converge into one common result experience.
+
+
+--------------------------------------------------
+
+
+2. ENTRY SCREEN
+
+
+--------------------------------------------------
+
+
+When the user clicks:
+
+
+“Neural SmartDemand Analytics”
+
+
+show a clean feature introduction page.
+
+
+Header:
+
+
+Neural SmartDemand Analytics
+
+
+Subtitle:
+
+
+“AI-powered material demand forecasting for the next 1–6 months.”
+
+
+Supporting text:
+
+
+“Turn historical consumption and operational signals into a forward-looking material demand plan.”
+
+
+Below the header, show two large mode-selection cards.
+
+
+CARD 1:
+
+
+Manual Forecast
+
+
+Icon:
+
+
+sliders / filter
+
+
+Description:
+
+
+“Choose planning horizon, materials, styles and buyers manually.”
+
+
+Button:
+
+
+“Use Manual Mode”
+
+
+CARD 2:
+
+
+Agentic Forecast
+
+
+Icon:
+
+
+sparkles / AI
+
+
+Description:
+
+
+“Tell Neural PredictOS what you want to know and let AI select the relevant data automatically.”
+
+
+Button:
+
+
+“Use Agentic Mode”
+
+
+Clearly visually differentiate the selected mode.
+
+
+--------------------------------------------------
+
+
+3. MANUAL MODE
+
+
+--------------------------------------------------
+
+
+When Manual Mode is selected, display a clean planning configuration panel.
+
+
+Title:
+
+
+“Configure Forecast”
+
+
+Step indicator at top:
+
+
+01 Configure → 02 Analyze → 03 Review Forecast
+
+
+Create the following controls.
+
+
+A. PLANNING HORIZON
+
+
+Label:
+
+
+Forecast Horizon
+
+
+Dropdown options:
+
+
+1 Month
+
+
+2 Months
+
+
+3 Months
+
+
+4 Months
+
+
+5 Months
+
+
+6 Months
+
+
+Pre-select:
+
+
+6 Months
+
+
+B. MATERIAL CATEGORY
+
+
+Label:
+
+
+Material Category
+
+
+Dropdown:
+
+
+All Materials
+
+
+Fabric
+
+
+Thread
+
+
+Buttons
+
+
+Zippers
+
+
+Labels
+
+
+Packaging
+
+
+Other Accessories
+
+
+Default:
+
+
+Fabric
+
+
+C. MATERIAL
+
+
+Label:
+
+
+Material
+
+
+Dropdown with realistic demo materials:
+
+
+Cotton Fabric 180 GSM
+
+
+Cotton Fabric 220 GSM
+
+
+Polyester Thread 40/2
+
+
+Black Resin Buttons 18L
+
+
+Metal Zipper 5"
+
+
+Care Label
+
+
+Poly Bag 12×16
+
+
+Default:
+
+
+Cotton Fabric 180 GSM
+
+
+D. STYLE
+
+
+Label:
+
+
+Style
+
+
+Dropdown:
+
+
+All Styles
+
+
+POLO-2401
+
+
+TEE-2407
+
+
+SHIRT-2412
+
+
+SHIRT-2421
+
+
+JACKET-2503
+
+
+Default:
+
+
+All Styles
+
+
+E. BUYER
+
+
+Label:
+
+
+Buyer
+
+
+Dropdown:
+
+
+All Buyers
+
+
+H&M
+
+
+ZARA
+
+
+NEXT
+
+
+Marks & Spencer
+
+
+Primark
+
+
+Default:
+
+
+All Buyers
+
+
+Below the filters create a small “Selected Forecast Scope” summary card.
+
+
+Example:
+
+
+Forecast Horizon: 6 Months
+
+
+Material: Cotton Fabric 180 GSM
+
+
+Styles: All Styles
+
+
+Buyer: All Buyers
+
+
+Primary CTA:
+
+
+“Generate AI Forecast”
+
+
+Secondary text:
+
+
+“Neural PredictOS will analyze historical demand and operational signals before generating the forecast.”
+
+
+--------------------------------------------------
+
+
+4. AGENTIC MODE
+
+
+--------------------------------------------------
+
+
+When Agentic Mode is selected, display an AI command interface.
+
+
+Header:
+
+
+“Ask Neural PredictOS”
+
+
+Subtitle:
+
+
+“Describe the forecast you need and the AI agent will select the relevant data automatically.”
+
+
+Create a large prompt input box.
+
+
+For MVP demonstration, PRE-TYPE this exact prompt:
+
+
+“Forecast the demand for Cotton Fabric 180 GSM for the next 6 months. Analyze historical consumption, planned production, confirmed orders, seasonality and recent demand trends. Show me the expected monthly demand and highlight the key factors driving the forecast.”
+
+
+The user should be able to edit the prompt, but the default text should already be present.
+
+
+Below the prompt, show small suggestion chips:
+
+
+“Forecast fabric demand”
+
+
+“Forecast next 3 months”
+
+
+“Show highest demand materials”
+
+
+Primary button:
+
+
+“Analyze with AI”
+
+
+Small supporting label:
+
+
+“AI will automatically identify the relevant planning data.”
+
+
+Also display an “AI understands” preview:
+
+
+Material:
+
+
+Cotton Fabric 180 GSM
+
+
+Horizon:
+
+
+6 Months
+
+
+Analysis:
+
+
+Historical demand
+
+
+Planned production
+
+
+Confirmed orders
+
+
+Seasonality
+
+
+Recent trends
+
+
+This reinforces what the Agentic mode is doing.
+
+
+--------------------------------------------------
+
+
+5. ANALYSIS EXPERIENCE — CRITICAL
+
+
+--------------------------------------------------
+
+
+WHEN THE USER CLICKS THE GENERATE / ANALYZE BUTTON IN EITHER MODE:
+
+
+DO NOT immediately show the result.
+
+
+The application MUST show an AI analysis/loading experience for approximately 10 SECONDS.
+
+
+This should feel like the system is genuinely processing factory data.
+
+
+The experience should be visually impressive and presentation-ready.
+
+
+Do NOT use a generic spinner.
+
+
+Create an “AI Analysis in Progress” screen.
+
+
+Main heading:
+
+
+“Neural PredictOS is analyzing your forecast”
+
+
+Subheading:
+
+
+“Almost there — we’re analyzing your factory data to build the most relevant demand forecast.”
+
+
+Create a central animated AI visualization.
+
+
+Use a premium AI/data-processing visual:
+
+
+- flowing data particles
+
+
+- pulsing neural network
+
+
+- connected data nodes
+
+
+- animated graph lines
+
+
+- subtle green / blue / purple glow
+
+
+- moving signals between nodes
+
+
+The animation should feel like:
+
+
+factory data → AI analysis → forecast generation
+
+
+Show an animated progress indicator.
+
+
+Example progress steps:
+
+
+✓ Loading historical demand
+
+
+✓ Analyzing production plans
+
+
+✓ Reviewing confirmed orders
+
+
+✓ Detecting demand patterns
+
+
+✓ Evaluating seasonality
+
+
+● Generating AI forecast
+
+
+The checkmarks should appear progressively during the 10 seconds.
+
+
+Also show an animated percentage:
+
+
+0%
+
+
+10%
+
+
+25%
+
+
+40%
+
+
+55%
+
+
+70%
+
+
+85%
+
+
+95%
+
+
+100%
+
+
+Do NOT make the animation complete too quickly.
+
+
+Total simulated analysis duration:
+
+
+10 seconds.
+
+
+After approximately 10 seconds, automatically transition to the Forecast Result Dashboard.
+
+
+--------------------------------------------------
+
+
+6. COMMON RESULT DASHBOARD
+
+
+--------------------------------------------------
+
+
+IMPORTANT:
+
+
+Both Manual Mode and Agentic Mode MUST open the SAME result dashboard structure.
+
+
+The dashboard should feel like the “intelligence output” of Neural PredictOS.
+
+
+Header:
+
+
+“AI Demand Forecast”
+
+
+Below it:
+
+
+“Forecast generated for Cotton Fabric 180 GSM”
+
+
+Show metadata:
+
+
+Forecast Horizon: Jul–Dec 2026
+
+
+Forecast Generated: Just now
+
+
+Mode: Manual / Agentic
+
+
+Confidence: 87%
+
+
+Add a small badge:
+
+
+“AI Generated”
+
+
+--------------------------------------------------
+
+
+7. FORECAST SUMMARY CARDS
+
+
+--------------------------------------------------
+
+
+Create four summary cards.
+
+
+CARD 1:
+
+
+Total Forecast Demand
+
+
+Example:
+
+
+486,000 meters
+
+
+CARD 2:
+
+
+Average Monthly Demand
+
+
+Example:
+
+
+81,000 meters
+
+
+CARD 3:
+
+
+Peak Demand Month
+
+
+Example:
+
+
+October 2026
+
+
+CARD 4:
+
+
+Forecast Confidence
+
+
+Example:
+
+
+87%
+
+
+Under confidence add:
+
+
+“High confidence”
+
+
+These are DEMO values and should remain internally consistent.
+
+
+--------------------------------------------------
+
+
+8. MAIN FORECAST CHART
+
+
+--------------------------------------------------
+
+
+This is the most important visualization.
+
+
+Create a large professional chart titled:
+
+
+“Historical Demand vs AI Forecast”
+
+
+X-axis:
+
+
+Months
+
+
+Show approximately:
+
+
+Jan
+
+
+Feb
+
+
+Mar
+
+
+Apr
+
+
+May
+
+
+Jun
+
+
+Jul
+
+
+Aug
+
+
+Sep
+
+
+Oct
+
+
+Nov
+
+
+Dec
+
+
+Display:
+
+
+Historical Demand
+
+
+Jan–Jun
+
+
+AI Forecast
+
+
+Jul–Dec
+
+
+Use a visually distinct but professional treatment for historical vs forecast.
+
+
+Add a subtle vertical divider between:
+
+
+Historical
+
+
+and
+
+
+Forecast
+
+
+The forecast region can have a subtle light background treatment.
+
+
+Example forecast data:
+
+
+Historical:
+
+
+Jan 68,000
+
+
+Feb 70,000
+
+
+Mar 73,000
+
+
+Apr 69,000
+
+
+May 74,000
+
+
+Jun 77,000
+
+
+Forecast:
+
+
+Jul 79,000
+
+
+Aug 82,000
+
+
+Sep 84,000
+
+
+Oct 91,000
+
+
+Nov 86,000
+
+
+Dec 83,000
+
+
+Clearly communicate that forecast values are predictions, not confirmed requirements.
+
+
+--------------------------------------------------
+
+
+9. FORECAST TABLE
+
+
+--------------------------------------------------
+
+
+Below the chart create:
+
+
+“Monthly Forecast”
+
+
+Columns:
+
+
+Month
+
+
+AI Forecast
+
+
+Change vs Previous Month
+
+
+Confidence
+
+
+Planning Status
+
+
+Example:
+
+
+July 2026 | 79,000 m | +3% | 89% | Normal
+
+
+August 2026 | 82,000 m | +4% | 87% | Normal
+
+
+September 2026 | 84,000 m | +2% | 86% | Watch
+
+
+October 2026 | 91,000 m | +8% | 84% | High Demand
+
+
+November 2026 | 86,000 m | -5% | 85% | Normal
+
+
+December 2026 | 83,000 m | -3% | 88% | Normal
+
+
+Use professional status indicators.
+
+
+--------------------------------------------------
+
+
+10. WHY AI PREDICTED THIS
+
+
+--------------------------------------------------
+
+
+Create a prominent section:
+
+
+“Why is AI predicting this?”
+
+
+This is essential because the case study says planners should understand the drivers behind the prediction.
+
+
+Show 4 AI forecast drivers.
+
+
+1. Production Volume
+
+
+Impact:
+
+
+High
+
+
+Description:
+
+
+“Planned production volume is increasing over the next quarter.”
+
+
+2. Historical Consumption Trend
+
+
+Impact:
+
+
+High
+
+
+Description:
+
+
+“Material consumption has shown a sustained upward trend over recent months.”
+
+
+3. Seasonal Demand Pattern
+
+
+Impact:
+
+
+Medium
+
+
+Description:
+
+
+“Historical seasonal patterns indicate stronger fabric usage during this period.”
+
+
+4. Confirmed Orders
+
+
+Impact:
+
+
+Medium
+
+
+Description:
+
+
+“Confirmed upcoming orders contribute to the projected increase in demand.”
+
+
+Represent these visually using compact cards or horizontal impact bars.
+
+
+Do not pretend these are real ML explanations. These are simulated AI insights for the prototype.
+
+
+--------------------------------------------------
+
+
+11. AI INSIGHT CARD
+
+
+--------------------------------------------------
+
+
+Create a highlighted AI Insight card.
+
+
+Title:
+
+
+“Neural AI Insight”
+
+
+Example content:
+
+
+“Cotton Fabric 180 GSM demand is expected to rise over the next 3 months, reaching a projected peak of 91,000 meters in October. The increase is primarily associated with higher planned production and recent consumption trends.”
+
+
+Add:
+
+
+“View Detailed Drivers”
+
+
+--------------------------------------------------
+
+
+12. FORECAST TREND / BUSINESS INTERPRETATION
+
+
+--------------------------------------------------
+
+
+Create another compact visualization:
+
+
+“Demand Outlook”
+
+
+Show:
+
+
+Current trend:
+
+
+Increasing ↗
+
+
+Peak:
+
+
+October 2026
+
+
+Expected growth:
+
+
++18% vs current monthly average
+
+
+Then add a business interpretation:
+
+
+“Planning implication:
+
+
+Production Planning should review fabric availability ahead of the October demand peak.”
+
+
+Important:
+
+
+This is NOT yet a procurement recommendation.
+
+
+SmartDemand should focus on forecasting.
+
+
+--------------------------------------------------
+
+
+13. HUMAN REVIEW — ACCEPT OR ADJUST
+
+
+--------------------------------------------------
+
+
+At the bottom create a clear human-in-the-loop review section.
+
+
+Header:
+
+
+“Review AI Forecast”
+
+
+Supporting text:
+
+
+“Review the AI-generated forecast before using it for production and procurement planning.”
+
+
+Provide two buttons:
+
+
+Primary:
+
+
+“Accept Forecast”
+
+
+Secondary:
+
+
+“Adjust Forecast”
+
+
+Also include:
+
+
+“Export Forecast”
+
+
+When “Adjust Forecast” is clicked:
+
+
+Open an editable version of the monthly forecast table.
+
+
+Allow the user to modify forecast quantities.
+
+
+Show:
+
+
+“Adjusted by Planner”
+
+
+When “Accept Forecast” is clicked:
+
+
+Show a confirmation state:
+
+
+“Forecast accepted”
+
+
+“Your reviewed forecast is now available for production and procurement planning.”
+
+
+--------------------------------------------------
+
+
+14. MANUAL VS AGENTIC TRACEABILITY
+
+
+--------------------------------------------------
+
+
+On the result dashboard show a small “Forecast Context” panel.
+
+
+For Manual Mode:
+
+
+Mode:
+
+
+Manual
+
+
+Planner selected:
+
+
+6-month horizon
+
+
+Fabric
+
+
+Cotton Fabric 180 GSM
+
+
+All Styles
+
+
+All Buyers
+
+
+For Agentic Mode:
+
+
+Mode:
+
+
+Agentic
+
+
+User request:
+
+
+Show the pre-built prompt used.
+
+
+AI-selected scope:
+
+
+6-month horizon
+
+
+Cotton Fabric 180 GSM
+
+
+All Styles
+
+
+All Buyers
+
+
+This makes it easy to demonstrate during the case study how the two modes differ while producing the same intelligence output.
+
+
+--------------------------------------------------
+
+
+15. NAVIGATION
+
+
+--------------------------------------------------
+
+
+Add a breadcrumb:
+
+
+Dashboard
+
+
+/
+
+
+Neural SmartDemand Analytics
+
+
+/
+
+
+AI Demand Forecast
+
+
+The user should be able to go back to:
+
+
+“Configure Forecast”
+
+
+and modify the settings / prompt.
+
+
+If they generate a new forecast, repeat the 10-second AI analysis animation.
+
+
+--------------------------------------------------
+
+
+16. DEMO DATA BEHAVIOR
+
+
+--------------------------------------------------
+
+
+This is a FRONT-END MVP DEMO.
+
+
+Do NOT build a real ML forecasting model.
+
+
+Use realistic hardcoded / simulated apparel manufacturing data.
+
+
+The important thing is that the prototype visually demonstrates:
+
+
+INPUT
+
+
+↓
+
+
+AI ANALYSIS
+
+
+↓
+
+
+FORECAST
+
+
+↓
+
+
+AI EXPLANATION
+
+
+↓
+
+
+HUMAN REVIEW
+
+
+All values must remain internally consistent across:
+
+
+- KPI cards
+
+
+- charts
+
+
+- table
+
+
+- AI insights
+
+
+- forecast drivers
+
+
+--------------------------------------------------
+
+
+17. VISUAL DESIGN
+
+
+--------------------------------------------------
+
+
+Follow the existing Neural PredictOS dashboard design language.
+
+
+Use:
+
+
+- premium enterprise SaaS
+
+
+- light background
+
+
+- white cards
+
+
+- deep navy typography
+
+
+- primary green accent
+
+
+- subtle blue / purple AI accents
+
+
+- rounded corners
+
+
+- soft shadows
+
+
+- generous whitespace
+
+
+- elegant charts
+
+
+- professional icons
+
+
+- subtle animations
+
+
+The interface should look like a serious AI planning product used by a factory management team.
+
+
+Avoid:
+
+
+- childish AI visuals
+
+
+- excessive gradients
+
+
+- gaming aesthetics
+
+
+- generic chatbot UI
+
+
+- overly complicated charts
+
+
+- excessive red
+
+
+- unnecessary decorative elements
+
+
+The AI analysis animation can be more visually expressive than the rest of the product, but must still feel professional.
+
+
+--------------------------------------------------
+
+
+18. RESPONSIVE / INTERACTION
+
+
+--------------------------------------------------
+
+
+Desktop-first enterprise application.
+
+
+Make the entire flow clickable and functional:
+
+
+Dashboard
+
+
+→ SmartDemand Analytics
+
+
+→ Select Manual / Agentic
+
+
+→ Configure
+
+
+→ Analyze
+
+
+→ 10-second analysis animation
+
+
+→ Forecast Result Dashboard
+
+
+→ Review
+
+
+→ Accept / Adjust
+
+
+Do not create separate fake result dashboards for Manual and Agentic modes.
+
+
+Use ONE shared forecast dashboard with dynamic metadata showing which mode generated it.
+
+
+--------------------------------------------------
+
+
+19. MOST IMPORTANT UX PRINCIPLE
+
+
+--------------------------------------------------
+
+
+The feature must communicate this story clearly:
+
+
+“Instead of manually combining historical demand, production plans, orders and planner experience to guess future material demand, Neural PredictOS analyzes these signals and produces a forward-looking AI forecast that the planner can understand, review and approve.”
+
+
+This is a forecasting product — NOT merely a dashboard.
+
+
+The result should feel like a real AI planning workflow suitable for a product case-study presentation.
+
+
+
+
+
+
+PROMPT FOR Second Feature. 
+
+
+BUILD THE SECOND CORE FEATURE OF NEURAL PREDICTOS:
+
+
+FEATURE:
+Neural Procurement Intelligence
+
+
+This is an MVP demonstration prototype for an apparel manufacturing / RMG factory.
+
+
+The objective is to demonstrate how Neural PredictOS converts future material demand forecasts and current supply information into prioritized procurement intelligence.
+
+
+IMPORTANT:
+This feature should feel ACTION-ORIENTED.
+
+
+SmartDemand Analytics answers:
+“What materials will we need?”
+
+
+Procurement Intelligence answers:
+“Which materials are at risk, which one should we act on first, and what should we procure?”
+
+
+--------------------------------------------------
+1. ENTRY SCREEN
+--------------------------------------------------
+
+
+When the user clicks:
+
+
+“Neural Procurement Intelligence”
+
+
+show a feature introduction/configuration screen.
+
+
+Header:
+
+
+Neural Procurement Intelligence
+
+
+Subtitle:
+
+
+“AI-powered future shortage detection, risk prioritization and procurement recommendations.”
+
+
+Supporting text:
+
+
+“Identify material risks before they impact production and know what to prioritize next.”
+
+
+At the top show a simple process visualization:
+
+
+Demand Forecast
+→ Supply Analysis
+→ Risk Detection
+→ Priority
+→ Procurement Action
+
+
+Use a subtle animated connecting line.
+
+
+--------------------------------------------------
+2. MODE SELECTION
+--------------------------------------------------
+
+
+Create two large mode cards.
+
+
+CARD 1:
+Manual Analysis
+
+
+Description:
+“Select a forecast, materials and planning parameters manually.”
+
+
+Button:
+“Use Manual Mode”
+
+
+CARD 2:
+Agentic Analysis
+
+
+Description:
+“Describe the procurement problem and let the AI agent analyze the relevant supply and demand data automatically.”
+
+
+Button:
+“Use Agentic Mode”
+
+
+The selected mode should be visually highlighted.
+
+
+Both modes MUST eventually lead to the SAME result dashboard.
+
+
+--------------------------------------------------
+3. MANUAL MODE
+--------------------------------------------------
+
+
+When Manual Mode is selected, show:
+
+
+Step indicator:
+
+
+01 Select Data
+→
+02 Analyze Risk
+→
+03 Review Procurement Intelligence
+
+
+Create:
+
+
+A. DEMAND FORECAST
+
+
+Label:
+Select Forecast
+
+
+Dropdown:
+
+
+Latest AI Forecast
+July–December 2026
+
+
+Pre-select:
+Latest AI Forecast
+
+
+Show small information:
+
+
+Forecast generated by:
+Neural SmartDemand Analytics
+
+
+B. MATERIAL SCOPE
+
+
+Material Category:
+
+
+All Materials
+Fabric
+Thread
+Buttons
+Zippers
+Labels
+Packaging
+
+
+Default:
+All Materials
+
+
+Material:
+
+
+All Materials
+Cotton Fabric 180 GSM
+Cotton Fabric 220 GSM
+Polyester Thread 40/2
+Black Resin Buttons 18L
+Metal Zipper 5"
+Care Label
+Poly Bag 12×16
+
+
+Default:
+All Materials
+
+
+C. PRIORITIZATION WINDOW
+
+
+Label:
+Planning Window
+
+
+Options:
+
+
+Next 1 Month
+Next 2 Months
+Next 3 Months
+Next 6 Months
+
+
+Default:
+Next 6 Months
+
+
+D. OPTIONAL FILTER
+
+
+Risk Level:
+
+
+All Risks
+Critical
+High
+Medium
+Low
+
+
+Default:
+All Risks
+
+
+Create a summary card:
+
+
+Forecast:
+Jul–Dec 2026
+
+
+Material Scope:
+All Materials
+
+
+Planning Window:
+Next 6 Months
+
+
+Primary CTA:
+
+
+“Analyze Procurement Risk”
+
+
+--------------------------------------------------
+4. AGENTIC MODE
+--------------------------------------------------
+
+
+Show:
+
+
+Header:
+
+
+“Ask Neural PredictOS”
+
+
+Subtitle:
+
+
+“Describe the procurement problem you want the AI to investigate.”
+
+
+Large prompt input.
+
+
+PRE-TYPE this exact demo prompt:
+
+
+“Analyze the next 6 months of material demand against current inventory and open purchase orders. Identify materials that are likely to become short, rank them by procurement priority, and recommend what quantity we should procure and when we should act. Focus especially on materials that could impact production.”
+
+
+The text must be editable.
+
+
+Below it show suggestion chips:
+
+
+“Which materials are at risk?”
+“What should we procure first?”
+“Show critical shortages”
+
+
+Below the prompt show:
+
+
+AI will analyze:
+- Demand forecast
+- Current inventory
+- Open purchase orders
+- Required dates
+- Supplier lead times
+- Supply conditions
+
+
+Primary CTA:
+
+
+“Analyze with AI”
+
+
+--------------------------------------------------
+5. 10-SECOND AI ANALYSIS EXPERIENCE
+--------------------------------------------------
+
+
+CRITICAL:
+
+
+When either Manual or Agentic mode starts analysis:
+
+
+DO NOT immediately show the result.
+
+
+Display a full analysis state for approximately 10 SECONDS.
+
+
+Do NOT use a generic spinner.
+
+
+Create an impressive enterprise AI processing experience.
+
+
+Main heading:
+
+
+“Neural PredictOS is analyzing procurement risk”
+
+
+Subheading:
+
+
+“Almost there — we’re comparing future demand with supply availability and identifying the materials that need attention.”
+
+
+Central visual:
+
+
+Create a professional animated procurement intelligence visualization.
+
+
+Visual concept:
+
+
+Demand signals
++
+Inventory
++
+Open POs
++
+Supplier lead times
+↓
+AI Risk Engine
+↓
+Risk Score
+↓
+Priority
+↓
+Recommended Action
+
+
+Use:
+- Animated data nodes
+- Flowing connections
+- Pulsing AI core
+- Moving signals
+- Subtle green / blue / purple glow
+- Professional enterprise aesthetic
+
+
+Show progressive analysis stages:
+
+
+✓ Loading demand forecast
+✓ Checking current inventory
+✓ Reviewing open purchase orders
+✓ Evaluating required dates
+✓ Analyzing supplier lead times
+✓ Detecting future shortages
+✓ Calculating risk scores
+✓ Ranking procurement priorities
+● Generating recommendations
+
+
+Animate these stages progressively over approximately 10 seconds.
+
+
+Show percentage progression:
+
+
+0%
+12%
+24%
+39%
+52%
+67%
+81%
+93%
+100%
+
+
+When analysis reaches 100%:
+
+
+Automatically transition to the common Procurement Intelligence dashboard.
+
+
+--------------------------------------------------
+6. COMMON RESULT DASHBOARD
+--------------------------------------------------
+
+
+Both Manual and Agentic modes MUST open the same result dashboard.
+
+
+Header:
+
+
+“Procurement Intelligence”
+
+
+Subtitle:
+
+
+“AI-powered view of future material risks and procurement priorities.”
+
+
+Show metadata:
+
+
+Analysis Window:
+Jul–Dec 2026
+
+
+Materials Analyzed:
+128
+
+
+High Risk:
+12
+
+
+Analysis Generated:
+Just now
+
+
+Mode:
+Manual / Agentic
+
+
+Show badge:
+
+
+“AI Risk Analysis Complete”
+
+
+--------------------------------------------------
+7. EXECUTIVE RISK SUMMARY
+--------------------------------------------------
+
+
+At the top create four KPI cards.
+
+
+CARD 1:
+Materials Analyzed
+128
+
+
+CARD 2:
+Critical Risks
+4
+
+
+CARD 3:
+High Risks
+8
+
+
+CARD 4:
+Recommended Procurement
+৳12.8M
+
+
+Use realistic DEMO values.
+
+
+Add a small supporting sentence under the cards:
+
+
+“12 materials require procurement attention within the planning horizon.”
+
+
+--------------------------------------------------
+8. PROCUREMENT PRIORITY BOARD
+--------------------------------------------------
+
+
+This should be the most visually important section.
+
+
+Title:
+
+
+“Procurement Priority”
+
+
+Subtitle:
+
+
+“Materials ranked by AI-assessed business urgency.”
+
+
+Create a large table.
+
+
+Columns:
+
+
+Priority
+Material
+Shortage Qty
+Required Date
+Lead Time
+Risk Score
+Priority Level
+AI Recommendation
+Action
+
+
+Example data:
+
+
+1
+Cotton Fabric 180 GSM
+25,000 m
+Sep 15
+35 days
+92
+Critical
+Procure 25,000 m
+Review
+
+
+2
+Black Resin Buttons 18L
+50,000 pcs
+Oct 03
+28 days
+87
+High
+Procure 50,000 pcs
+Review
+
+
+3
+Polyester Thread 40/2
+8,500 cones
+Sep 22
+21 days
+81
+High
+Place supplier order
+Review
+
+
+4
+Metal Zipper 5"
+12,000 pcs
+Oct 11
+30 days
+68
+Medium
+Monitor supply
+Review
+
+
+5
+Care Label
+35,000 pcs
+Nov 02
+14 days
+51
+Medium
+Review open PO
+Review
+
+
+Use priority ranking visually:
+1 = strongest emphasis
+then progressively lower emphasis.
+
+
+Risk score should be visually clear.
+
+
+Do not make the table look like a generic ERP table.
+
+
+It should feel like an AI decision-support interface.
+
+
+--------------------------------------------------
+9. RISK DISTRIBUTION
+--------------------------------------------------
+
+
+Create a visualization titled:
+
+
+“Material Risk Distribution”
+
+
+Show:
+
+
+Critical
+4
+
+
+High
+8
+
+
+Medium
+19
+
+
+Low
+97
+
+
+Use a clean donut chart or segmented visualization.
+
+
+Beside it display:
+
+
+“Risk concentration”
+
+
+Example:
+
+
+“4 materials have a critical risk level and may affect production within the next 45 days.”
+
+
+--------------------------------------------------
+10. FUTURE SHORTAGE TIMELINE
+--------------------------------------------------
+
+
+Create an important visualization:
+
+
+“Future Shortage Timeline”
+
+
+This should show when materials are expected to become insufficient.
+
+
+X-axis:
+
+
+Sep
+Oct
+Nov
+Dec
+Jan
+Feb
+
+
+Plot material risk events.
+
+
+Example:
+
+
+Cotton Fabric 180 GSM
+Shortage expected:
+15 Sep
+
+
+Polyester Thread 40/2
+Shortage expected:
+22 Sep
+
+
+Black Resin Buttons 18L
+Shortage expected:
+03 Oct
+
+
+Metal Zipper 5"
+Shortage expected:
+11 Oct
+
+
+The purpose of this visualization is to make timing obvious.
+
+
+The Procurement Manager should immediately see:
+
+
+“Which problem happens first?”
+
+
+--------------------------------------------------
+11. SUPPLY VS DEMAND VIEW
+--------------------------------------------------
+
+
+For the selected highest-risk material create a detailed card:
+
+
+“Cotton Fabric 180 GSM”
+
+
+Show a supply-demand balance visualization.
+
+
+Required Demand:
+105,000 m
+
+
+Current Inventory:
+30,000 m
+
+
+Incoming PO:
+50,000 m
+
+
+Available Supply:
+80,000 m
+
+
+Projected Shortage:
+25,000 m
+
+
+Use a horizontal comparison/bar visualization.
+
+
+Clearly show the calculation:
+
+
+105,000
+-
+(30,000 + 50,000)
+=
+25,000 m shortage
+
+
+Label:
+
+
+“Projected shortage”
+
+
+This should demonstrate that Neural PredictOS is not randomly inventing the risk.
+
+
+--------------------------------------------------
+12. AI RISK EXPLANATION
+--------------------------------------------------
+
+
+Create a section:
+
+
+“Why is this material high risk?”
+
+
+For Cotton Fabric 180 GSM show:
+
+
+Risk Score:
+92 / 100
+
+
+Risk drivers:
+
+
+Demand Increase
+HIGH IMPACT
+“Forecast demand is above the recent monthly average.”
+
+
+Inventory Coverage
+HIGH IMPACT
+“Current inventory is insufficient to cover projected requirements.”
+
+
+Supplier Lead Time
+MEDIUM IMPACT
+“Supplier lead time reduces the available response window.”
+
+
+Open PO Coverage
+HIGH IMPACT
+“Existing purchase orders do not fully cover projected demand.”
+
+
+Use horizontal impact indicators.
+
+
+Then write:
+
+
+“AI Assessment”
+
+
+“Cotton Fabric 180 GSM is classified as Critical because projected demand exceeds available supply by 25,000 meters and the estimated supplier lead time leaves a limited response window.”
+
+
+IMPORTANT:
+These explanations are simulated demo explanations, not actual ML-generated explanations.
+
+
+--------------------------------------------------
+13. PROCUREMENT RECOMMENDATION
+--------------------------------------------------
+
+
+Create a large prominent card:
+
+
+“AI Procurement Recommendation”
+
+
+Material:
+Cotton Fabric 180 GSM
+
+
+Recommended Quantity:
+25,000 meters
+
+
+Recommended Action Date:
+Before 10 Aug 2026
+
+
+Expected Need Date:
+15 Sep 2026
+
+
+Priority:
+CRITICAL
+
+
+Recommendation:
+
+
+“Place procurement order for 25,000 meters before 10 Aug to cover the projected shortage and protect the September production requirement.”
+
+
+Add two buttons:
+
+
+“Approve Recommendation”
+
+
+“Modify”
+
+
+Also add:
+
+
+“View Reasoning”
+
+
+This is the key output of Procurement Intelligence.
+
+
+--------------------------------------------------
+14. PRIORITY SCORE EXPLANATION
+--------------------------------------------------
+
+
+Add a small info panel:
+
+
+“How is priority determined?”
+
+
+Show the conceptual factors:
+
+
+Shortage Severity
+Required Date
+Supplier Lead Time
+Material Importance
+Supply Condition
+Demand Trend
+
+
+Do not show complicated mathematical formulas.
+
+
+Instead show:
+
+
+Priority Score = Business Urgency based on demand, supply and timing signals.
+
+
+--------------------------------------------------
+15. MATERIAL DETAIL DRAWER
+--------------------------------------------------
+
+
+When the user clicks “Review” on a material:
+
+
+Open a right-side detail drawer.
+
+
+Header:
+Cotton Fabric 180 GSM
+
+
+Display:
+
+
+Risk Score
+92
+
+
+Priority
+Critical
+
+
+Required Date
+15 Sep 2026
+
+
+Forecast Demand
+105,000 m
+
+
+Inventory
+30,000 m
+
+
+Incoming PO
+50,000 m
+
+
+Projected Shortage
+25,000 m
+
+
+Supplier
+ABC Textiles Ltd.
+
+
+Lead Time
+35 days
+
+
+AI Recommendation
+Procure 25,000 m
+
+
+Reasoning:
+“Demand exceeds available supply and supplier lead time creates a limited recovery window.”
+
+
+Buttons:
+
+
+Approve
+Modify
+Dismiss
+
+
+The drawer should feel like an executive decision panel.
+
+
+--------------------------------------------------
+16. HUMAN-IN-THE-LOOP
+--------------------------------------------------
+
+
+At the bottom show:
+
+
+“Manager Review”
+
+
+Supporting text:
+
+
+“Neural PredictOS provides recommendations; final procurement decisions remain with the Procurement Manager.”
+
+
+Show the status of recommendations:
+
+
+Pending Review
+Approved
+Modified
+Dismissed
+
+
+When “Approve Recommendation” is clicked:
+
+
+Change status to:
+
+
+“Approved by Procurement Manager”
+
+
+Show confirmation:
+
+
+“Procurement recommendation approved for action.”
+
+
+When “Modify” is clicked:
+
+
+Allow the user to edit:
+
+
+Quantity
+Action Date
+Supplier
+
+
+Then show:
+
+
+“Modified by Procurement Manager”
+
+
+This is important because AI must assist rather than replace the procurement team.
+
+
+--------------------------------------------------
+17. AGENTIC / MANUAL TRACEABILITY
+--------------------------------------------------
+
+
+Add a small section:
+
+
+“Analysis Context”
+
+
+For Manual Mode show:
+
+
+Mode:
+Manual
+
+
+Forecast:
+Latest AI Forecast
+
+
+Planning Window:
+Next 6 Months
+
+
+Material Scope:
+All Materials
+
+
+For Agentic Mode show:
+
+
+Mode:
+Agentic
+
+
+User Request:
+Display the pre-built prompt used.
+
+
+AI Scope Identified:
+6-month demand forecast
+Inventory
+Open POs
+Required dates
+Lead times
+Supply conditions
+
+
+This demonstrates that both interaction methods converge into one intelligence output.
+
+
+--------------------------------------------------
+18. AI INSIGHT
+--------------------------------------------------
+
+
+At the top or right side of the result dashboard add a compact AI insight card:
+
+
+“Neural AI Insight”
+
+
+Example:
+
+
+“12 materials require procurement attention during the next 6 months. Cotton Fabric 180 GSM has the highest risk because projected demand exceeds available supply and supplier lead time limits the recovery window.”
+
+
+CTA:
+
+
+“View Critical Risks”
+
+
+--------------------------------------------------
+19. NAVIGATION
+--------------------------------------------------
+
+
+Breadcrumb:
+
+
+Dashboard
+/
+Neural Procurement Intelligence
+/
+Procurement Intelligence
+
+
+Provide:
+
+
+“Back to Analysis”
+
+
+Clicking it should return to the Manual / Agentic configuration screen.
+
+
+Changing the configuration and clicking Analyze again should replay the 10-second analysis animation and regenerate the dashboard.
+
+
+--------------------------------------------------
+20. DEMO DATA
+--------------------------------------------------
+
+
+This is a FRONT-END MVP.
+
+
+Do NOT build a real machine-learning model.
+
+
+Use realistic simulated apparel manufacturing data.
+
+
+Keep all numbers internally consistent.
+
+
+Example core calculation:
+
+
+Required Demand:
+105,000 m
+
+
+Current Inventory:
+30,000 m
+
+
+Incoming PO:
+50,000 m
+
+
+Projected Shortage:
+25,000 m
+
+
+The recommendation should therefore be:
+
+
+Procure:
+25,000 m
+
+
+Do not create contradictory quantities anywhere else in the dashboard.
+
+
+--------------------------------------------------
+21. WHAT THIS FEATURE MUST DEMONSTRATE
+--------------------------------------------------
+
+
+The prototype must make this distinction obvious:
+
+
+Traditional ERP:
+“Material is short by 25,000 units.”
+
+
+Neural PredictOS:
+“This is a Critical risk, here is why it matters, this is when it becomes a problem, this is what you should procure, and this is the action date.”
+
+
+The product is an AI decision-support layer.
+
+
+It should not feel like a simple shortage report.
+
+
+--------------------------------------------------
+22. VISUAL DESIGN
+--------------------------------------------------
+
+
+Match the existing Neural PredictOS visual language.
+
+
+Use:
+
+
+- Premium enterprise SaaS
+- Light interface
+- White cards
+- Deep navy typography
+- Green primary accent
+- Blue / purple secondary AI accents
+- Rounded corners
+- Soft shadows
+- Clean modern charts
+- Professional icons
+- Generous whitespace
+
+
+Risk visualization should be clear without making the entire interface red.
+
+
+Use red/orange only where risk needs emphasis.
+
+
+The dashboard should feel suitable for:
+
+
+- Procurement Managers
+- Production Managers
+- Factory leadership
+- Executive product demonstrations
+
+
+Avoid:
+- Generic ERP appearance
+- Excessive red
+- Gaming UI
+- Consumer chatbot styling
+- Overly complex analytics
+- Decorative charts without decision value
+
+
+--------------------------------------------------
+23. FINAL USER JOURNEY
+--------------------------------------------------
+
+
+The complete clickable flow must be:
+
+
+Dashboard
+↓
+Neural Procurement Intelligence
+↓
+Manual / Agentic Mode
+↓
+Configure / Prompt
+↓
+Analyze
+↓
+10-second AI Analysis Animation
+↓
+Procurement Intelligence Dashboard
+↓
+Risk Distribution
+↓
+Priority Ranking
+↓
+Future Shortage Timeline
+↓
+Supply vs Demand
+↓
+AI Risk Explanation
+↓
+AI Procurement Recommendation
+↓
+Manager Review
+↓
+Approve / Modify / Dismiss
+
+
+The final prototype must communicate:
+
+
+DEMAND FORECAST
+↓
+SUPPLY RISK
+↓
+AI PRIORITY
+↓
+PROCUREMENT ACTION
+↓
+HUMAN DECISION
+
+
+This is the core story of Neural Procurement Intelligence.
