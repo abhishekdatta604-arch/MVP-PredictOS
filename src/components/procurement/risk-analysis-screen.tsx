@@ -38,8 +38,6 @@ export function RiskAnalysisScreen({ onDone }: { onDone: () => void }) {
         materials that need attention.
       </p>
 
-      <RiskVisual progress={p} />
-
       <div className="mt-8 w-full max-w-xl">
         <div className="flex items-end justify-between">
           <span className="text-sm font-medium text-muted-foreground">Risk analysis progress</span>
@@ -81,98 +79,6 @@ export function RiskAnalysisScreen({ onDone }: { onDone: () => void }) {
           );
         })}
       </ul>
-    </div>
-  );
-}
-
-function RiskVisual({ progress }: { progress: number }) {
-  const inputs = [
-    { y: 50, label: "Demand" },
-    { y: 105, label: "Inventory" },
-    { y: 160, label: "Open POs" },
-    { y: 215, label: "Lead time" },
-  ];
-  const core = { x: 220, y: 132 };
-  const outputs = [
-    { y: 75, label: "Risk score" },
-    { y: 132, label: "Priority" },
-    { y: 190, label: "Action" },
-  ];
-
-  return (
-    <div className="relative mt-8 w-full max-w-xl overflow-hidden rounded-3xl border border-border bg-card p-4 shadow-sm">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-70"
-        style={{
-          background:
-            "radial-gradient(55% 55% at 50% 50%, color-mix(in oklab, var(--primary) 14%, transparent), transparent), radial-gradient(45% 45% at 85% 65%, color-mix(in oklab, var(--chart-3) 12%, transparent), transparent)",
-        }}
-      />
-      <svg viewBox="0 0 440 265" className="relative h-56 w-full">
-        <defs>
-          <linearGradient id="pi-line" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="var(--chart-2)" stopOpacity="0.3" />
-            <stop offset="100%" stopColor="var(--primary)" stopOpacity="0.75" />
-          </linearGradient>
-        </defs>
-
-        {inputs.map((n, i) => (
-          <g key={`in-${i}`}>
-            <line x1={60} y1={n.y} x2={core.x - 30} y2={core.y} stroke="url(#pi-line)" strokeWidth={1.2} />
-            <circle r={3} fill="var(--chart-3)">
-              <animateMotion
-                dur={`${1.5 + i * 0.3}s`}
-                repeatCount="indefinite"
-                path={`M60,${n.y} L${core.x - 30},${core.y}`}
-              />
-            </circle>
-            <circle cx={60} cy={n.y} r={7} fill="var(--chart-3)" opacity={0.8} />
-            <text x={14} y={n.y - 12} className="fill-muted-foreground" fontSize="9">
-              {n.label}
-            </text>
-          </g>
-        ))}
-
-        <circle cx={core.x} cy={core.y} r={34} fill="var(--primary)" opacity={0.1}>
-          <animate attributeName="r" values="30;40;30" dur="2.4s" repeatCount="indefinite" />
-        </circle>
-        <circle cx={core.x} cy={core.y} r={20} fill="var(--primary)" opacity={0.95} />
-        <text x={core.x} y={core.y + 4} textAnchor="middle" fontSize="9" fill="var(--primary-foreground)">
-          AI
-        </text>
-
-        {outputs.map((n, i) => (
-          <g key={`out-${i}`}>
-            <line x1={core.x + 30} y1={core.y} x2={370} y2={n.y} stroke="url(#pi-line)" strokeWidth={1.2} />
-            <circle r={3} fill="var(--primary)">
-              <animateMotion
-                dur={`${1.4 + i * 0.35}s`}
-                repeatCount="indefinite"
-                path={`M${core.x + 30},${core.y} L370,${n.y}`}
-              />
-            </circle>
-            <circle cx={370} cy={n.y} r={7} fill="var(--primary)" opacity={0.85} />
-            <text x={384} y={n.y + 3} className="fill-muted-foreground" fontSize="9">
-              {n.label}
-            </text>
-          </g>
-        ))}
-
-        <polyline
-          points="20,250 90,246 160,240 230,236 300,230 370,224 420,220"
-          fill="none"
-          stroke="var(--primary)"
-          strokeWidth={2}
-          strokeDasharray="600"
-          strokeDashoffset={600 - progress * 600}
-          opacity={0.8}
-        />
-      </svg>
-      <div className="relative flex justify-between px-2 pb-1 text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
-        <span>Supply &amp; demand</span>
-        <span>AI risk engine</span>
-        <span>Action</span>
-      </div>
     </div>
   );
 }
