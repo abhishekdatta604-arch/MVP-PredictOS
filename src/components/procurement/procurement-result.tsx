@@ -159,7 +159,7 @@ export function ProcurementResult({
         <dl className="mt-5 grid gap-4 border-t border-border pt-4 text-sm sm:grid-cols-3 lg:grid-cols-5">
           {[
             ["Analysis Window", "Jul–Dec 2026"],
-            ["Materials Analyzed", "128"],
+            ["Materials Analyzed", "20"],
             ["High Risk", "12"],
             ["Analysis Generated", "Just now"],
             ["Mode", mode === "manual" ? "Manual" : "Agentic"],
@@ -176,7 +176,7 @@ export function ProcurementResult({
       <div className="grid gap-6 xl:grid-cols-3">
         <div className="space-y-4 xl:col-span-2">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <Kpi label="Materials Analyzed" value="128" />
+            <Kpi label="Materials Analyzed" value="20" />
             <Kpi label="Critical Risks" value="4" tone="destructive" />
             <Kpi label="High Risks" value="8" tone="warning" />
             <Kpi label="Recommended Procurement" value="৳12.8M" tone="primary" />
