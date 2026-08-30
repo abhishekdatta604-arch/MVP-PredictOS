@@ -354,8 +354,8 @@ export function ProcurementResult({
                     range={[200, 1800]}
                     name="Shortage Quantity"
                   />
-                  <ReferenceLine x={35} stroke="rgba(156, 163, 175, 0.25)" strokeDasharray="3 3" />
-                  <ReferenceLine y={25} stroke="rgba(156, 163, 175, 0.25)" strokeDasharray="3 3" />
+                  <ReferenceLine x={35} stroke="rgba(156, 163, 175, 0.55)" strokeDasharray="3 3" />
+                  <ReferenceLine y={25} stroke="rgba(156, 163, 175, 0.55)" strokeDasharray="3 3" />
                   <Tooltip content={<CustomTooltip />} cursor={{ strokeDasharray: '3 3' }} />
                   <Scatter name="Materials" data={matrixData}>
                     {matrixData.map((entry, index) => (
