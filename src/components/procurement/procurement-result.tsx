@@ -298,84 +298,86 @@ export function ProcurementResult({
           </div>
 
           <div className="relative mt-6 flex-1 min-h-[340px]">
-            {/* Subtle quadrant labels grid overlay to prevent horizontal collision */}
-            <div className="absolute inset-0 pointer-events-none grid grid-cols-2 grid-rows-2 pt-[35px] pb-[75px] pl-[75px] pr-[45px] text-[9px] sm:text-[10px] font-bold text-muted-foreground/30 uppercase tracking-wider">
-              <div className="flex items-start justify-start">
-                High Lead Time / Soon Required — Act Now
+            <div className="relative w-full h-[300px]">
+              {/* Subtle quadrant labels grid overlay constrained to plotting area */}
+              <div className="absolute left-[70px] right-[40px] top-[20px] bottom-[30px] pointer-events-none grid grid-cols-2 grid-rows-2 text-[9px] sm:text-[10px] font-bold text-black dark:text-white uppercase tracking-wider">
+                <div className="flex items-start justify-start p-2">
+                  High Lead Time / Soon Required — Act Now
+                </div>
+                <div className="flex items-start justify-end text-right p-2">
+                  High Lead Time / Later Required — Plan Ahead
+                </div>
+                <div className="flex items-end justify-start p-2 pb-5">
+                  Low Lead Time / Soon Required — Monitor Closely
+                </div>
+                <div className="flex items-end justify-end text-right p-2 pb-5">
+                  Low Lead Time / Later Required — Low Risk
+                </div>
               </div>
-              <div className="flex items-start justify-end text-right">
-                High Lead Time / Later Required — Plan Ahead
-              </div>
-              <div className="flex items-end justify-start">
-                Low Lead Time / Soon Required — Monitor Closely
-              </div>
-              <div className="flex items-end justify-end text-right">
-                Low Lead Time / Later Required — Low Risk
-              </div>
-            </div>
 
-            <ResponsiveContainer width="100%" height={300}>
-              <ScatterChart
-                margin={{ top: 20, right: 30, bottom: 30, left: 20 }}
-              >
-                <XAxis
-                  type="number"
-                  dataKey="x"
-                  name="Days Until Required"
-                  domain={[0, 80]}
-                  stroke="currentColor"
-                  className="text-muted-foreground text-[10px] sm:text-xs"
-                  label={{
-                    value: "Days Until Required",
-                    position: "bottom",
-                    offset: 10,
-                    className: "fill-muted-foreground text-[11px] font-medium"
-                  }}
-                />
-                <YAxis
-                  type="number"
-                  dataKey="y"
-                  name="Supplier Lead Time"
-                  domain={[0, 45]}
-                  stroke="currentColor"
-                  className="text-muted-foreground text-[10px] sm:text-xs"
-                  label={{
-                    value: "Supplier Lead Time (Days)",
-                    angle: -90,
-                    position: "insideLeft",
-                    offset: -5,
-                    className: "fill-muted-foreground text-[11px] font-medium"
-                  }}
-                />
-                <ZAxis
-                  type="number"
-                  dataKey="z"
-                  range={[200, 1800]}
-                  name="Shortage Quantity"
-                />
-                <ReferenceLine x={35} stroke="rgba(156, 163, 175, 0.25)" strokeDasharray="3 3" />
-                <ReferenceLine y={25} stroke="rgba(156, 163, 175, 0.25)" strokeDasharray="3 3" />
-                <Tooltip content={<CustomTooltip />} cursor={{ strokeDasharray: '3 3' }} />
-                <Scatter name="Materials" data={matrixData}>
-                  {matrixData.map((entry, index) => (
-                    <Cell
-                      key={`cell-${index}`}
-                      fill={
-                        entry.level === "Critical"
-                          ? "var(--destructive)"
-                          : entry.level === "High"
-                            ? "var(--chart-4)"
-                            : entry.level === "Medium"
-                              ? "var(--chart-3)"
-                              : "var(--primary)"
-                      }
-                      onClick={() => setDrawer(entry)}
-                      className="cursor-pointer hover:brightness-95 active:scale-95 transition-all outline-none"
-                    />
-                  ))}
-                </Scatter>
-              </ScatterChart>
-            </ResponsiveContainer>
+              <ResponsiveContainer width="100%" height={300}>
+                <ScatterChart
+                  margin={{ top: 20, right: 30, bottom: 30, left: 20 }}
+                >
+                  <XAxis
+                    type="number"
+                    dataKey="x"
+                    name="Days Until Required"
+                    domain={[0, 80]}
+                    stroke="currentColor"
+                    className="text-muted-foreground text-[10px] sm:text-xs"
+                    label={{
+                      value: "Days Until Required",
+                      position: "bottom",
+                      offset: 10,
+                      className: "fill-muted-foreground text-[11px] font-medium"
+                    }}
+                  />
+                  <YAxis
+                    type="number"
+                    dataKey="y"
+                    name="Supplier Lead Time"
+                    domain={[0, 45]}
+                    stroke="currentColor"
+                    className="text-muted-foreground text-[10px] sm:text-xs"
+                    label={{
+                      value: "Supplier Lead Time (Days)",
+                      angle: -90,
+                      position: "insideLeft",
+                      offset: -5,
+                      className: "fill-muted-foreground text-[11px] font-medium"
+                    }}
+                  />
+                  <ZAxis
+                    type="number"
+                    dataKey="z"
+                    range={[200, 1800]}
+                    name="Shortage Quantity"
+                  />
+                  <ReferenceLine x={35} stroke="rgba(156, 163, 175, 0.25)" strokeDasharray="3 3" />
+                  <ReferenceLine y={25} stroke="rgba(156, 163, 175, 0.25)" strokeDasharray="3 3" />
+                  <Tooltip content={<CustomTooltip />} cursor={{ strokeDasharray: '3 3' }} />
+                  <Scatter name="Materials" data={matrixData}>
+                    {matrixData.map((entry, index) => (
+                      <Cell
+                        key={`cell-${index}`}
+                        fill={
+                          entry.level === "Critical"
+                            ? "var(--destructive)"
+                            : entry.level === "High"
+                              ? "var(--chart-4)"
+                              : entry.level === "Medium"
+                                ? "var(--chart-3)"
+                                : "var(--primary)"
+                        }
+                        onClick={() => setDrawer(entry)}
+                        className="cursor-pointer hover:brightness-95 active:scale-95 transition-all outline-none"
+                      />
+                    ))}
+                  </Scatter>
+                </ScatterChart>
+              </ResponsiveContainer>
+            </div>
           </div>
 
           <div className="mt-4 flex flex-wrap items-center justify-between gap-4 border-t border-border/60 pt-4 text-xs">
