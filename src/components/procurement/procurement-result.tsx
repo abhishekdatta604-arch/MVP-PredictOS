@@ -298,18 +298,20 @@ export function ProcurementResult({
           </div>
 
           <div className="relative mt-6 flex-1 min-h-[340px]">
-            {/* Subtle quadrant labels */}
-            <div className="absolute top-[25px] left-[75px] text-[9px] sm:text-[10px] font-bold text-muted-foreground/30 uppercase tracking-wider pointer-events-none">
-              High Lead Time / Soon Required — Act Now
-            </div>
-            <div className="absolute top-[25px] right-[35px] text-[9px] sm:text-[10px] font-bold text-muted-foreground/30 uppercase tracking-wider text-right pointer-events-none">
-              High Lead Time / Later Required — Plan Ahead
-            </div>
-            <div className="absolute bottom-[55px] left-[75px] text-[9px] sm:text-[10px] font-bold text-muted-foreground/30 uppercase tracking-wider pointer-events-none">
-              Low Lead Time / Soon Required — Monitor Closely
-            </div>
-            <div className="absolute bottom-[55px] right-[35px] text-[9px] sm:text-[10px] font-bold text-muted-foreground/30 uppercase tracking-wider text-right pointer-events-none">
-              Low Lead Time / Later Required — Low Risk
+            {/* Subtle quadrant labels grid overlay to prevent horizontal collision */}
+            <div className="absolute inset-0 pointer-events-none grid grid-cols-2 grid-rows-2 pt-[35px] pb-[75px] pl-[75px] pr-[45px] text-[9px] sm:text-[10px] font-bold text-muted-foreground/30 uppercase tracking-wider">
+              <div className="flex items-start justify-start">
+                High Lead Time / Soon Required — Act Now
+              </div>
+              <div className="flex items-start justify-end text-right">
+                High Lead Time / Later Required — Plan Ahead
+              </div>
+              <div className="flex items-end justify-start">
+                Low Lead Time / Soon Required — Monitor Closely
+              </div>
+              <div className="flex items-end justify-end text-right">
+                Low Lead Time / Later Required — Low Risk
+              </div>
             </div>
 
             <ResponsiveContainer width="100%" height={300}>
