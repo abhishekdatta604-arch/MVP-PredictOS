@@ -39,8 +39,6 @@ export function AnalysisScreen({ onDone }: { onDone: () => void }) {
         forecast.
       </p>
 
-      <NeuralVisual progress={p} />
-
       <div className="mt-8 w-full max-w-xl">
         <div className="flex items-end justify-between">
           <span className="text-sm font-medium text-muted-foreground">Analysis progress</span>
@@ -82,100 +80,6 @@ export function AnalysisScreen({ onDone }: { onDone: () => void }) {
           );
         })}
       </ul>
-    </div>
-  );
-}
-
-function NeuralVisual({ progress }: { progress: number }) {
-  const nodes = [
-    { x: 40, y: 60 },
-    { x: 40, y: 130 },
-    { x: 40, y: 200 },
-    { x: 165, y: 45 },
-    { x: 165, y: 130 },
-    { x: 165, y: 215 },
-    { x: 290, y: 90 },
-    { x: 290, y: 170 },
-    { x: 400, y: 130 },
-  ];
-  const edges: [number, number][] = [
-    [0, 3], [0, 4], [1, 3], [1, 4], [1, 5], [2, 4], [2, 5],
-    [3, 6], [4, 6], [4, 7], [5, 7], [6, 8], [7, 8],
-  ];
-
-  return (
-    <div className="relative mt-8 w-full max-w-xl overflow-hidden rounded-3xl border border-border bg-card p-4 shadow-sm">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-70"
-        style={{
-          background:
-            "radial-gradient(60% 60% at 30% 40%, color-mix(in oklab, var(--primary) 12%, transparent), transparent), radial-gradient(50% 50% at 80% 60%, color-mix(in oklab, var(--chart-3) 12%, transparent), transparent)",
-        }}
-      />
-      <svg viewBox="0 0 440 260" className="relative h-56 w-full">
-        <defs>
-          <linearGradient id="nd-line" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="var(--chart-2)" stopOpacity="0.35" />
-            <stop offset="100%" stopColor="var(--primary)" stopOpacity="0.7" />
-          </linearGradient>
-        </defs>
-
-        {edges.map(([a, b], i) => (
-          <g key={i}>
-            <line
-              x1={nodes[a].x}
-              y1={nodes[a].y}
-              x2={nodes[b].x}
-              y2={nodes[b].y}
-              stroke="url(#nd-line)"
-              strokeWidth={1.2}
-            />
-            <circle r={3} fill="var(--primary)">
-              <animateMotion
-                dur={`${1.6 + (i % 4) * 0.4}s`}
-                repeatCount="indefinite"
-                path={`M${nodes[a].x},${nodes[a].y} L${nodes[b].x},${nodes[b].y}`}
-              />
-            </circle>
-          </g>
-        ))}
-
-        {nodes.map((n, i) => (
-          <g key={i}>
-            <circle cx={n.x} cy={n.y} r={14} fill="var(--primary)" opacity={0.08}>
-              <animate
-                attributeName="r"
-                values="12;20;12"
-                dur="2.4s"
-                begin={`${i * 0.18}s`}
-                repeatCount="indefinite"
-              />
-            </circle>
-            <circle
-              cx={n.x}
-              cy={n.y}
-              r={i === 8 ? 9 : 6}
-              fill={i === 8 ? "var(--primary)" : "var(--chart-3)"}
-              opacity={i === 8 ? 1 : 0.75}
-            />
-          </g>
-        ))}
-
-        <polyline
-          points="20,240 80,232 140,236 200,224 260,214 320,196 380,186 420,178"
-          fill="none"
-          stroke="var(--primary)"
-          strokeWidth={2}
-          strokeDasharray="600"
-          strokeDashoffset={600 - progress * 600}
-          opacity={0.85}
-        />
-      </svg>
-      <div className="relative flex justify-between px-2 pb-1 text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
-        <span>Factory data</span>
-        <span>AI analysis</span>
-        <span>Forecast</span>
-      </div>
     </div>
   );
 }
