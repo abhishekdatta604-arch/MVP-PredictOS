@@ -179,7 +179,7 @@ export function ProcurementResult({
             <Kpi label="Materials Analyzed" value="20" />
             <Kpi label="Critical Risks" value="4" tone="destructive" />
             <Kpi label="High Risks" value="8" tone="warning" />
-            <Kpi label="Forecast Confident" value="90%" tone="primary" />
+            <Kpi label="Forecast Confidence" value="90%" tone="primary" />
           </div>
           <p className="text-sm text-muted-foreground">
             12 materials require procurement attention within the planning horizon.
